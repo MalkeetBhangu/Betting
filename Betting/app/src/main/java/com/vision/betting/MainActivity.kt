@@ -32,10 +32,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun adapterSet(){
-        arrayList.add(RvModel("IPL","Cricket"))
-        arrayList.add(RvModel("IPL","Cricket"))
-        arrayList.add(RvModel("IPL","Cricket"))
-        arrayList.add(RvModel("IPL","Cricket"))
+        arrayList.add(RvModel(R.drawable.cricket,"IPL","Cricket"))
+        arrayList.add(RvModel(R.drawable.football,"FIFA","Football"))
+        arrayList.add(RvModel(R.drawable.basketball,"TBT Championship","Basketball"))
+        arrayList.add(RvModel(R.drawable.hockey,"Men's Pro ","Hockey"))
+        arrayList.add(RvModel(R.drawable.badminton,"BWF","Badminton"))
 
         rvList.layoutManager = LinearLayoutManager(this)
         myAdapter = MyAdapter(this,arrayList)

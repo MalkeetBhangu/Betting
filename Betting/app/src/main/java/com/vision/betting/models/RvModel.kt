@@ -1,5 +1,5 @@
 package com.vision.betting.models
 
-class RvModel(var leagues: String ="", var matchName: String ="" ) {
+class RvModel(var civSport: Int = 0, var leagues: String ="", var sportName: String ="" ) {
 
 }

@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.vision.betting.R
 import com.vision.betting.models.RvModel
+import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.item.view.*
 
 class MyAdapter(var context: Context, var arrayList: ArrayList<RvModel>):RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
@@ -23,13 +24,15 @@ class MyAdapter(var context: Context, var arrayList: ArrayList<RvModel>):Recycle
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        holder.civSportIcon.setImageDrawable(context.resources.getDrawable(arrayList[position].civSport))
         holder.tvLeagueName.text = arrayList[position].leagues
-        holder.tvMatchName.text = arrayList[position].matchName
+        holder.tvSportName.text = arrayList[position].sportName
     }
 
     inner class MyViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
         var tvLeagueName: TextView = itemView.tvLeagueName
-        var tvMatchName: TextView = itemView.tvMatchName
+        var tvSportName: TextView = itemView.tvSportName
+        var civSportIcon: CircleImageView = itemView.civSport
     }
 
 }
