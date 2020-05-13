@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Betting</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="new_user">New User ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="please_fill_name">Please Fill Name</string>
+    <string name="please_fill_mobileNo">Please Fill Mobile No.</string>
+    <string name="please_fill_city">Please Fill City.</string>
+    <string name="please_fill_email">Please Fill Email.</string>
+    <string name="please_fill_password">Please Fill Password.</string>
+    <string name="please_fill_confirmPassword">Please Fill Confirm Password.</string>
+    <string name="password_and_confirm_password_not_match">Password and Confirm Password not match.</string>
+    <string name="please_wait">Please Wait.</string>
+    <string name="authentication_failed">Authentication Failed.</string>
+    <string name="email_password_incorrect">Email or Password incorrect.</string>
+    <string name="data_not_save">Data not save</string>
 </resources>
